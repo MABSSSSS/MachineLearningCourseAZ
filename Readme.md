@@ -313,3 +313,12 @@ build the decision tree associated tothese K datapoints.
 
 choose the number N trees you want to build and repeat seps 1 and 2 
 for a new datapoint, make each one of oyur Ntrees predict the category to which data points belongs and assign the new datapoints to the category that wins the majority vote.
+
+
+**Confusion Matrix and Accuracy:**
+prediction and actual data dependancy.
+
+Accuracy rate and error rate:
+AR =correct/total =TN+TP/Total
+
+ER = Incorrect/Total = FP+ FN/total
