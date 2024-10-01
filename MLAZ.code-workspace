@@ -1,0 +1,16 @@
+{
+    "folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Downloads/Machine Learning-A-Z-Codes-Datasets (1)"
+		},
+		{
+			"path": "../../Downloads/Machine+Learning+A-Z+(Model+Selection)"
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "MLAZ"
+    }
+}
