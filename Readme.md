@@ -322,3 +322,131 @@ Accuracy rate and error rate:
 AR =correct/total =TN+TP/Total
 
 ER = Incorrect/Total = FP+ FN/total
+
+**False Positive and False Negative:**
+
+Type I(false Positive) and Type II error(false Negative):
+
+**Accuracy Paradox**
+    
+    Accuracy rate = correct / Total
+
+**CAP CURVE**
+
+---> Cumulative accuracy profile.
+
+compare model between each other and how much add gain you get.
+
+*Good, poor and random model...*
+
+---> ROC =Receiver Operating Characterstics.
+
+**CAP Curve Analysis:**
+
+-> AR = a(R)/a(p)
+
+x<60-70% Poor
+70%v<X<80% Good
+<90% Very Good
+X <60% Rubbish
+x=100% (overfitting model and some depeandant variable and dataset need to adjust).
+
+**Clustering:**
+is grouping unlabelled data.
+
+supervised--> regression, cleassification
+
+Unsupervised:--> clustering input data and model have to learn by itself.
+
+**K-MEANS CLUSTERING:**
+
+**Elbow Method:**
+approach to make decisions about grouping data .
+
+within cluster sum of squares:
+
+WCSS =distance(Pi, Ci)2
+
+first k means clustering run then we make decisions for WCSS.
+more cluster we have smaller WCCS comes and vice versa.
+
+visual method .
+
+K-Means++:
+Kmeans++ initialization Algortihm:
+1. choose first centroid at random among data points.
+2. for each of remaining datapoints compute the distance to the nearest out of alrady selected centroids.
+3. Choose next centroid among remaining datapoints using weighted random selection -weighted by D2
+4. Repeat step2 and 3 until all k centroids have been selected.
+5. Proceed with standard k-means clustering.
+
+ **HC Intuition :**
+ What HC does for you:
+
+same as Kmeans but different process.
+NOTE:
+    *Agglomerative & Divisive:*
+    Agglomerative :
+    1. make each datapoint single point clsuters-> that forms N cluster.
+2. take two closest datapoints and make them one cluster >N-1
+3. Take two closest clusters and make them one cluster-> Forms N-2 clusters.
+4. Repeat step 3 until there is only one cluster.
+-->FIN
+
+Also euclidean distance :
+
+--> distance between two clusters:
+1. closest pints.
+2. furthest points.
+3. Average distance.
+4. Distance between centroids.
+
+Agglomerative HC:
+
+**HC Intuition:**
+
+-->How Do Dendograms Work?
+  dendograms is like memory of HC .
+  more furhter they are more dissimilar they are.
+
+  dendogram contain memory of herirarchical clustering algorithm.
+
+  **HC Intuition:**
+  --> Using Dendrograms:
+  it also need optimal number of clusters.
+Heirarchical approach on larget distance.
+
+--> Knowledge Test:
+
+
+**Association Rule Learning:**
+people who bought also bought...
+
+-->ARL-Movie Recommendation...
+Potential Rules:
+support,confidence ,list:
+
+support(M)=user watchlists containing M1 and M2/user watchlists containing M1.
+
+Apriori-Support:
+Apriori-Confidence:
+
+lift = confidence/support
+
+*Apriori-Algorithm:*
+
+1. Set a min support and confidence.
+2. Take all the subsets in transactions having higher support than mininmum support.
+3. Take all rules of these subsets having higher confidence than minimum confidence.
+4. Sort the rules by decreasing lift.
+
+**Association Rule Learning Eclat Intuition:**
+
+*potential rules:*
+recommendation->support(M) = user watchlists containing M/user watchlists
+optimisation:-> support(I) =transactions containing I/ transactions
+
+Elcat Algorithm:
+1. Set a minimum support.
+2. Take all the subsets in trasanctions haning higher support than min support.
+3. support these subsets by decreaising support.
