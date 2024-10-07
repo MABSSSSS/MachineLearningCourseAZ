@@ -450,3 +450,270 @@ Elcat Algorithm:
 1. Set a minimum support.
 2. Take all the subsets in trasanctions haning higher support than min support.
 3. support these subsets by decreaising support.
+
+**MULTI-ARMED BANDIT PROBLEM:**
+
+**Upper Confidence Bound Intuition(UCB):**
+
+we have d arms.
+each time a user connects to this web page , that makesa  round.
+at each round n, we choose one ad to display to the user.
+At each rouund n, ad I gives reward ri(n) E {0,1}:ri (n) =1 if the user clicked on the ad i, O if user did not.
+Our goal is to maximize the total reward we get over many rounds.
+
+**Thompson Sampling Algorithm Intuition:**
+ where we think mue values wiilbe:
+ We are not trying to guess the distributions behind the machines.
+
+ generated our own bandit configuration:
+
+ *New Round:*
+            
+   **UCB VS THOMPSON SAMPLING:**
+-->UCB is deterministic.
+no randomness in it .
+Requires update at every round in it.
+--> Thompson is Probablistic:
+Can accomodate delayed feedback.
+better emipirical evidence.
+
+
+**NLP Intuition:**
+
+types of NLP:
+classical vs deep learning:
+Bag of words:
+
+**Types of NLP:**
+
+NLP and DL.:
+Seq 2 Seq: models for natural language processing.
+DNLP:
+
+**Classical VS Deep Learning Model:**
+
+some examples:
+1. if else rules (chatbot)
+2. Audio frequency components analysis(speech recognition).
+3. Bag of words model(classsification).
+4. CNN for text recogntion(classification).
+5. Seq2Seq(many applications).
+
+  **Bag-of-words:**
+--> Yes/No:
+--20000 elements long.
+
+[SOS,EOS and Special Words.]
+
+Training data by using principles 
+
+**What is Deep Learning**
+Neurons.:
+
+input layer--> Hidden Layer --> Output Layer
+
+interconnect everything with each other...
+
+**plan of Attack:**
+The neuron.
+The activation function.
+how do neural networks work?(example).
+
+How do neural networks learn?
+Gradient Descent.
+Stochastic Gradient descent.
+Back propagation.
+
+**THE NEURON:**
+
+dendrites , axon : 
+
+neuron also have nodes.
+neuron gets input signal and gives output signal.
+
+input value pass thorugh synapse for giving value.
+
+mean cancellation --> KL-expansion.
+
+output value canbe :
+continous, binary and categorical.
+weight are crucial to RNN.
+
+first step and second activation function.
+third it passes the signal.
+
+**The activation function:**
+
+Sigmoid function:
+rectifier function:
+
+**Hyperbolic Tangent function(tanh):
+
+**HOW DO NN Work?**
+
+**HOW DO NN LEARN:**
+
+input value then actual value 
+
+-->Perceptron:
+
+**Gradient Descent:**
+
+input value --> w1-->activation value -->output value--> actual value -->cost function.
+
+-->curse of dimensionality:
+
+sunway taihulight: world fastest computer.
+
+cross function:
+
+**STOCHASTIC GRADIENT DESCENT:**
+
+cross function need to be convex.
+convex into one direction.
+
+batch and stpchastic gradient it run one row at a time.and avoid the problem of local minimum too overall local minimum.
+mini batch gradient descent method.
+
+**BACK PROPOGATION:**
+
+forward propogation for input layers.
+advance algorithm driven by adjust weight simultaneously.
+
+1. randomly initialize weights to small nmers close to 0.
+2. input first observation of dataset input layer ,each future in one input node.
+3. forward propogation.
+4. compare predicted result to actual result. measure gen error.
+5. back prop from left to right error is back prop. update weight according to responsiblity. learning rate decides by how much we update weigths.
+6. repeat 1 to 5 and update weights after each observation.
+7. when whole training set passed through ANN that makes an epoch. Redo more epochs.
+
+**CONVOLUTIONAL NEURAL NETWORK:**
+
+PLAN OF ATTACK:
+-What are CNN?
+.Convolution Operation.
+--(b)-ReLU Layer.
+2. --Pooling.
+3. -- Flattening
+4. --Full connection
+5. Summary
+softmax and cross entropy.
+
+**CONVOLUTIONAL NEURAL NETWORK:**
+
+input image--> CNN --> Output label
+1. Convolution
+2. max Pooling
+3. flattening 
+4. full connection
+
+**STEP-1:CONVOLUTION**
+(f*g)(t) = f(T)g(t-T)dT
+
+input image-->*<--feature detector/filter =Feature Map.
+-when feature matches more then feature map get higher value.
+
+create multiple feature map to obtain our first convolution layer.
+
+edge detect: sharpen: emboss: 
+
+**STEP1(B)-ReLU Layer:**
+
+black = negative ;white = positive values 
+
+...Sigmoid--> ReLU-->Leaky ReLU.
+
+**MAX POOLING:**
+
+Our neural network has special invariance .
+
+feature map--> Max pooling ---> Pooled Feature Map.
+
+-->sub sampling: 
+
+input image->convolution->convolution layer->max pooling->pooling layer.
+
+scs.ryerson.ca/
+
+**Flattening:**
+
+pooled feature map --->flattening -->put it in no of rowas and columns.-->input layer of future ANN.
+
+input image--> convolution-->pooling--> flattening-->input layer of ANN.
+
+**FULL CONNECTION:**
+-->flattening -->input layer-->fully connected layer--> output layer -->output value.
+
+**SUMMARY**
+INPUT IMAGE-->CONVOLUTION-->POOLING-->flattening-->>
+
+**Softmax and Cross-Entropy:**
+
+fj(z) = e^z.j/k.e^z.k 
+
+H(p,q) = -p(x).logq.(x)
+
+
+when one neural NETwORK OUTPERFORM OTHER THEN CALSSIFICATION ERROR occur.
+Mean squared error.
+
+Cross-entropy:
+
+**Principal Component Analysis(PCA)**
+noise filtering.
+visualisation.
+feature extraction.
+Stock market predictions.
+Gene data analysis.
+
+identify patterns in data.
+detect corelation between variables.
+
+standard data.
+obtain eigen vectirsa nd values from covariance or corelation matrix.
+store it.
+construct the projection matrix.
+
+-->e.g: 3D
+
+learn about the relationship betweeen X and Y values.
+Find list of principal values/axis.
+
+**Linear Discriminant Analysis:****LDA**
+
+as dimensionality reduction technique.
+in preprocessing step fro pattern calssification.
+goal to project dataset onto lower-dimensional space.
+
+LDA interested in axes that max the seperation between multiple classes.
+
+goal of LDA to project feature space onto small subspace .
+
+PCA component axes that max the variance.
+LDA max component axes the class-seperation.
+
+compute dimnesion mean vectors.
+compute scatter metrics.
+
+**K-FOLD CROSS-VALIDATION:**
+
+-->Dataset --> Training set and -->Test Set :
+
+training set split into 10(k)folds.
+
+(1st fold)One fold =V
+if aggregate metrics look good, then modeling approach is valid.(train model on full training set)
+otherwise adjust hyperparameters or change model and repeat.
+
+=Training data(v) =Validation Data
+**(Training on each fold uses same hyper parameters.)**
+
+**BIAS -VARIANCE-TRADEOFF--**
+Bias a  systematic error that occurs in machine learning model itself due to incorrect assumptions in ML process.
+
+1. Height bias low variance(model is too simple and doesnt capture the underlying trend of data).
+2. Low bias variance( model is too sensitive and capturing noise as if it were real trend(overfitting)).
+3. High bias high variance(model too simple to capture the data's trends and too sensitvie capturing noise as well).
+4. Low Bias low variacne(Great model... acccurately captures underlying trends of data and genrealizes well to unseen data).
+
