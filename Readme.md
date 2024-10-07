@@ -717,3 +717,7 @@ Bias a  systematic error that occurs in machine learning model itself due to inc
 3. High bias high variance(model too simple to capture the data's trends and too sensitvie capturing noise as well).
 4. Low Bias low variacne(Great model... acccurately captures underlying trends of data and genrealizes well to unseen data).
 
+**LOGISTIC REGRESSION INTUITION:**
+
+-->linear regression -->simple and multiple regression:
+

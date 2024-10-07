@@ -1,20 +1,20 @@
 {
     "folders": [
 		{
-			"name": "MLAZ",
-			"path": "."
+			"name": "Machine+Learning+A-Z+(Model+Selection)",
+			"path": "../../Downloads/Machine+Learning+A-Z+(Model+Selection)"
 		},
 		{
 			"name": "Machine Learning-A-Z-Codes-Datasets (1)",
 			"path": "../../Downloads/Machine Learning-A-Z-Codes-Datasets (1)"
 		},
 		{
-			"name": "Machine+Learning+A-Z+(Model+Selection)",
-			"path": "../../Downloads/Machine+Learning+A-Z+(Model+Selection)"
-		},
-		{
 			"name": "Machine Learning A-Z (Model Selection)",
 			"path": "../../Downloads/Machine+Learning+A-Z+(Model+Selection) (1)/Machine Learning A-Z (Model Selection)"
+		},
+		{
+			"name": "MLAZ",
+			"path": "."
 		}
 	],
     "settings": {
